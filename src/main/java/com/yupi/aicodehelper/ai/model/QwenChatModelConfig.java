@@ -11,6 +11,9 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
 
+/**
+ * 更灵活的自定义模型配置
+ */
 @Configuration
 @ConfigurationProperties(prefix = "langchain4j.community.dashscope.chat-model")
 @Data

@@ -7,7 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AiCodeHelperApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AiCodeHelperApplication.class, args);
+        SpringApplication app = new SpringApplication(AiCodeHelperApplication.class);
+        // 设置默认 profile
+        app.setAdditionalProfiles("local");
+        app.run(args);
     }
 
 }

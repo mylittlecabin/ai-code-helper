@@ -6,8 +6,10 @@ import dev.langchain4j.data.message.UserMessage;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
+@ActiveProfiles("local")
 class AiCodeHelperTest {
 
     @Resource

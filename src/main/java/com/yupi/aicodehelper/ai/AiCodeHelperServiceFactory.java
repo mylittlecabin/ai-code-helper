@@ -50,9 +50,9 @@ public class AiCodeHelperServiceFactory {
                 .streamingChatModel(qwenStreamingChatModel)
                 .chatMemory(chatMemory)
                 .chatMemoryProvider(memoryId ->
-                        MessageWindowChatMemory.withMaxMessages(10)) // 每个会话独立存储
-                .contentRetriever(contentRetriever) // RAG 检索增强生成
-                .tools(new InterviewQuestionTool()) // 工具调用
+                        MessageWindowChatMemory.withMaxMessages(20)) // 每个会话独立存储
+//                .contentRetriever(contentRetriever) // RAG 检索增强生成
+//                .tools(new InterviewQuestionTool()) // 工具调用
                 .toolProvider(mcpToolProvider) // MCP 工具调用
                 .build();
         return aiCodeHelperService;
